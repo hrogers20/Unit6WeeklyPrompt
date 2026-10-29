@@ -1,0 +1,9 @@
+The sprite utility used to check if the spaceship hits an alien is called spritecollide(). This function basically checks if one sprite
+touches another sprite that's part of a group. In the Alien Invasion game, the spaceship is one sprite and all the aliens are in a group.
+If the spaceship touches one of the aliens, the game detects it and the player can lose a life. If the player runs out of lives, the 
+game will end.
+The difference between spritecollide() and groupcollide() is that spritecollide() checks one sprite against a group,
+while groupcollide() checks two groups against each other. For example, groupcollide() would be used when bullets hit aliens because 
+here are multiple bullets and aliens on the screen at the same time.
+Both of these functions are important because they allow the game to know when objects are touching each other. Without them, the game 
+wouldn't be able to tell when the player hits an alien or when a bullet hits an alien.
